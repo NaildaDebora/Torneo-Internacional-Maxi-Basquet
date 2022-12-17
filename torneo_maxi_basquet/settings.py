@@ -168,6 +168,6 @@ EMAIL_USE_TLS = True
 #'''
 ######
 
-CSRF_TRUSTED_ORIGINS = ['https://torneomaxibasquet.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://maxibasquet.up.railway.app']
 
 
