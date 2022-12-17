@@ -94,9 +94,9 @@
                     {% if messages %}
                     {% for m in messages %}
                     <script>
-                        if ('{{m}}' == "Inscriba a su equipo primeramente"){
+                        if ('{{m}}' == "Inscriba a su equipo primeramente") {
                             Swal.fire('{{m}}', '', 'error');
-                        }else{
+                        } else {
 
                             Swal.fire('{{m}}', '', 'success');
                         }
@@ -116,7 +116,7 @@
 
     {% block ScriptBlock %} {% endblock ScriptBlock %}
 
-<div class="modal fade" id="uni_modal" role='dialog'>
+    <div class="modal fade" id="uni_modal" role='dialog'>
         <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
@@ -125,31 +125,32 @@
                 <div class="modal-body">
                 </div>
                 <div class="modal-sub-footer" style="display:flex; justify-content: flex-end; padding: 1rem">
-                    {% comment %} <button type="button" class="btn btn-sm btn-flat btn-light border rounded-0" data-bs-dismiss="modal">Close</button> {% endcomment %}
+                    {% comment %} <button type="button" class="btn btn-sm btn-flat btn-light border rounded-0"
+                        data-bs-dismiss="modal">Close</button> {% endcomment %}
                     <a class="btn btn-danger" href="{% url 'credenciales' %}" role="button">Cerrar</a>
                 </div>
             </div>
         </div>
     </div>
 
-<script>
+    <script>
         const loader = $('<div>')
         loader.attr('id', 'pre-loader')
         loader.html('<div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>')
 
-        window.start_loader = function() {
+        window.start_loader = function () {
             $('body').removeClass('loading')
             if ($('#pre-loader').length > 0)
                 $('#pre-loader').remove();
             $('body').append(loader)
             $('body').addClass('loading')
         }
-        window.end_loader = function() {
+        window.end_loader = function () {
             if ($('#pre-loader').length > 0)
                 $('#pre-loader').remove();
             $('body').removeClass('loading')
         }
-        window.uni_modal = function($title = '', $url = '', $size = "") {
+        window.uni_modal = function ($title = '', $url = '', $size = "") {
             start_loader()
             $.ajax({
                 url: $url,
@@ -157,7 +158,7 @@
                     console.log()
                     alert("An error occured")
                 },
-                success: function(resp) {
+                success: function (resp) {
                     if (resp) {
                         $('#uni_modal .modal-title').html($title)
                         $('#uni_modal .modal-body').html(resp)
