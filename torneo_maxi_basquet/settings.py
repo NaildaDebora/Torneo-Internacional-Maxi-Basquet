@@ -88,9 +88,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'railway',
         'USER': 'root',
-        'PASSWORD': 'Bs7fJytIrJOR9Y8CCSnD',
-        'HOST': 'containers-us-west-173.railway.app',
-        'PORT': '6042',
+        'PASSWORD': 'zvnEWSPGBoB07dZx2cc7',
+        'HOST': 'containers-us-west-108.railway.app',
+        'PORT': '6502',
     }
 }
 
@@ -162,12 +162,12 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'deploy3435@gmail.com'
-EMAIL_HOST_PASSWORD = 'xqcbmkaxdqmqbgpj'
+EMAIL_HOST_USER = 'deploying3435@gmail.com'
+EMAIL_HOST_PASSWORD = 'hwgsuasjtczvogom'
 EMAIL_USE_TLS = True
 #'''
 ######
 
-CSRF_TRUSTED_ORIGINS = ['https://maxibasquet.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://mb.up.railway.app']
 
 
