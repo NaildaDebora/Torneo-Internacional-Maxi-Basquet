@@ -88,9 +88,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'railway',
         'USER': 'root',
-        'PASSWORD': 'zvnEWSPGBoB07dZx2cc7',
-        'HOST': 'containers-us-west-108.railway.app',
-        'PORT': '6502',
+        'PASSWORD': 'NeEWrB3SfBvY0w3Zp76i',
+        'HOST': 'containers-us-west-37.railway.app',
+        'PORT': '5751',
     }
 }
 
@@ -168,6 +168,6 @@ EMAIL_USE_TLS = True
 #'''
 ######
 
-CSRF_TRUSTED_ORIGINS = ['https://mb.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://maxb.up.railway.app']
 
 
